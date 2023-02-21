@@ -1,5 +1,4 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#define divine
 
 /*
  * File: main.h
