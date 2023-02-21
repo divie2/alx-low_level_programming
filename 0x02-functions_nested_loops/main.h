@@ -8,4 +8,4 @@
  *       used in the 0x02-functions_nested_loops directory.
  */
 
-int putchar(char c);
+int _putchar(char c);
