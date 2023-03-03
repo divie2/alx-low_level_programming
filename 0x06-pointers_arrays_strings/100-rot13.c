@@ -1,4 +1,5 @@
-include "divine.h"
+#include "divine.h"
+
 /**
  * rot13 - Write a function that encodes a string using rot13
  *
