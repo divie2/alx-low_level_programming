@@ -1,20 +1,25 @@
 #include "divine.h"
 /**
- * _strcmp - Write a function that compares two strings.
+ * reverse_array - Write a function that reverses the content of an array of
+ * integers.
  *
- * @s1: This is the input string
- * @s2: This is the input string
+ * @a: This is the input array
+ * @n: This is the positions have the array
  *
- * Return: If the strings are equals return "0", if not return other number
  */
-
-int _strcmp(char *s1, char *s2)
+void reverse_array(int *a, int n)
 {
-	for (; (*s1 != '\0' && *s2 != '\0') && (*s1 == *s2); s1++, s2++)
-		;
-	if (*s1 == *s2)
+	int i, last;
+
+	last = n - 1;
+	for (i = 0; i < n / 2; i++)
 	{
-		return (0);
+		int start, end;
+
+		start = a[i];
+		end = a[last];
+		a[i] = end;
+		a[last] = start;
+		last--;
 	}
-	return (*s1 - *s2);
 }
