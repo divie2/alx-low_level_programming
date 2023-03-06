@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "divine.h"
+#include "holberton.h"
 
 /**
  * _strpbrk - Entry point
@@ -19,3 +19,6 @@ char *_strpbrk(char *s, char *accept)
 				return (s + i);
 		}
 	}
+
+	return (NULL);
+}
