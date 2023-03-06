@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "divine.h"
 
 /**
  * _strpbrk - Entry point
