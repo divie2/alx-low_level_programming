@@ -10,13 +10,13 @@
  */
 int main(void)
 {
-    listint_t *head;
-    listint_t *new;
-    listint_t hello = {8, NULL};
+    list_t *head;
+    list_t *new;
+    list_t hello = {8, NULL};
     size_t n;
 
     head = &hello;
-    new = malloc(sizeof(listint_t));
+    new = malloc(sizeof(list_t));
     if (new == NULL)
     {
         printf("Error\n");
@@ -25,7 +25,7 @@ int main(void)
     new->n = 9;
     new->next = head;
     head = new;
-    n = print_listint(head);
+    n = print_list(head);
     printf("-> %lu elements\n", n);
     free(new);
     return (0);
