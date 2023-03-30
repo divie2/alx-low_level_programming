@@ -1,28 +1,26 @@
-lists.h
-Header file contains prototypes, and the main struct.
-0-print_listint.c
-Prints the elements of a linked list. Returns the number of nodes.
-1-listint_len.c
-Gets the number of nodes in a linked list.
-2-add_nodeint.c
-Adds a new node at the beginning.
-3-add_nodeint_end.c
-Adds a new node at the end of the list
-4-free_listint.c
-Frees all nodes.
-5-free_listint2.c
-Frees all nodes and sets the head to NULL
-6-pop_listint.c
-Pops the head off of the list and returns its contents.
-7-get_nodeint.c
-Gets the value of a node at index n.
-8-sum_listint.c
-Returns a sum of all the data in the list.
-9-insert_nodeint.c
-Inserts a node at a specified point
-10-delete_nodeint.c
-Deletes a node at a specified point
-100-reverse_listint.c
-101-print_listint_safe.c
-102-free_listint_safe.c
-103-find_loop.c
+0. Print list
+
+0-print_list.c: C function that prints all the elements of a list_t list.
+If str is NULL, the function prints [0] (nil).
+1. List length
+
+1-list_len.c: C function that returns the number of elements in a linked list_t list.
+2. Add node
+
+2-add_node.c: C function that adds a new node at the beginning a of a list_t list.
+If the function fails - returns NULL.
+Otherwise - returns the address of the new element.
+3. Add node at the end
+
+3-add_node_end.c: C function that adds a new node at the end of a linked list_t list.
+If the function fails - returns NULL.
+Otherwise - returns the address of the new element.
+4. Free list
+
+4-free_list.c: C function that frees a list_t list.
+5. The Hare and the Tortoise
+
+100-first.c: C function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed.
+6. Real programmers can write assembly code in any language
+
+101-hello_holberton.asm: 64-but assembly program that prints Hello, Holberton followed by a new line using only the printf function witout interrupts.
